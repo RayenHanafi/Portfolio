@@ -4,13 +4,13 @@ function Skills() {
   return (
     <section
       id="skills"
-      class="flex flex-col items-center justify-center mt-16 sm:mt-[110px] px-4"
+      className="flex flex-col items-center justify-center mt-16 sm:mt-[110px] px-4"
     >
       <div className="title">Skills</div>
       {/* <!-- Skills Row 1 --> */}
       <div
         id="row1"
-        class="flex flex-row justify-center items-center flex-wrap gap-3 sm:gap-6 max-w-4xl"
+        className="flex flex-row justify-center items-center flex-wrap gap-3 sm:gap-6 max-w-4xl"
       >
         <SkillBox skillName={"React"} />
         <SkillBox skillName={"Tailwindcss"} />
@@ -21,7 +21,7 @@ function Skills() {
       {/* <!-- Skills Row 2 --> */}
       <div
         id="row2"
-        class="flex flex-row justify-center items-center flex-wrap gap-3 sm:gap-6 mt-4 sm:mt-7 max-w-4xl"
+        className="flex flex-row justify-center items-center flex-wrap gap-3 sm:gap-6 mt-4 sm:mt-7 max-w-4xl"
       >
         <SkillBox skillName={"IDA"} />
         <SkillBox skillName={"Figma"} />
