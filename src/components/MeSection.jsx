@@ -1,0 +1,39 @@
+function MeSection() {
+  return (
+    <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-8 lg:gap-12 mt-8 sm:mt-[60px] mb-8 sm:mb-[50px] w-full flex-1">
+      {/* <!-- Text --> */}
+      <div className="w-full lg:w-1/2 flex flex-col justify-center lg:justify-start items-center lg:items-start text-center lg:text-left -order-2 lg:order-1 lg:mt-14">
+        <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+          Hi, I'm Rayen
+        </div>
+        <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+          ICT Student
+        </div>
+        <p className="mt-4 lg:mt-[20px] text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed">
+          A 3rd year engineering student passioned by Cybersecurity, AI and
+          everything in between, also I have a deep interest in design that's
+          why I'm constantly learning, building and challenging to fulfill my
+          passion.
+        </p>
+        <p className="mt-2 lg:mt-[5px] text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed">
+          Welcome to my digital space where I showcase what I do, what I love,
+          and where I'm headed.
+        </p>
+        <button id="contactBtn" className="btn mt-6 lg:mt-10" type="button">
+          Contact me
+        </button>
+      </div>
+
+      {/* <!-- Image --> */}
+      <div className="w-full lg:w-1/2 flex justify-center items-center order-1 lg:order-2 pt-10">
+        <img
+          src="/images/hacker.png"
+          alt="pic"
+          className="w-full max-w-sm lg:max-w-none h-auto"
+        />
+      </div>
+    </div>
+  );
+}
+
+export default MeSection;
