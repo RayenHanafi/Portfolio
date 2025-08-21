@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useDebugValue } from "react";
+import { useState, useEffect, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import NavArrow from "./NavArrow";
 

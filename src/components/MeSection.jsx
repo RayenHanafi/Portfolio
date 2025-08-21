@@ -20,7 +20,7 @@ function MeSection() {
           and where I'm headed.
         </p>
         <button id="contactBtn" className="btn mt-6 lg:mt-10" type="button">
-          Contact me
+          <a href="#contact">Contact me</a>
         </button>
       </div>
 

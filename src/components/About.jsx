@@ -1,4 +1,8 @@
 function About() {
+  const handleViewButton = () => {
+    window.open("CV-Rayen-Hanafi_v2.pdf", "_blank");
+  };
+
   return (
     <section
       id="about"
@@ -15,7 +19,9 @@ function About() {
         in social media design using Figma, I aim to be a successful freelancer
         alongside my cybersecurity career goal.
       </p>
-      <button className="btn mt-6 sm:mt-9">View Resume</button>
+      <button className="btn mt-6 sm:mt-9" onClick={handleViewButton}>
+        View Resume
+      </button>
     </section>
   );
 }
