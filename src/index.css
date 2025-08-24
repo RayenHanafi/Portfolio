@@ -26,7 +26,7 @@
   }
 
   .title {
-    @apply text-7xl mb-12 text-white;
+    @apply text-5xl sm:text-6xl lg:text-7xl mb-12 text-white;
   }
 
   .projectCard {

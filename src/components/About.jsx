@@ -9,7 +9,7 @@ function About() {
       className="flex flex-col items-center justify-center mt-16 sm:mt-[110px] w-full max-w-5xl px-4 "
     >
       <div className="title">About me</div>
-      <p className="text-center text-lg sm:text-xl lg:text-2xl leading-relaxed">
+      <p className="text-center text-md sm:text-lg lg:text-2xl leading-relaxed">
         An engineering student from Tunisia, currently studying ICT engineering
         at INSAT. I've always been fascinated by how things work, especially in
         the world of cybersecurity, software, and AI. Over the past couple of

@@ -7,14 +7,14 @@ function ProjectSection() {
     {
       id: 1,
       title: "BookStore",
-      image: "./images/books.avif",
+      image: "/images/books.avif",
       description:
         "A bookstore web page designed using the Symfony framework. This is a full-stack web application featuring both backend and frontend components for managing a bookstore. Users can browse, search, and view details about books. The project demonstrates CRUD operations, user authentication, and responsive design",
     },
     {
       id: 2,
       title: "BookStore2",
-      image: "./images/books.avif",
+      image: "/images/books.avif",
       description:
         "Another bookstore project built with Symfony framework with CRUD, authentication, and responsive design.",
     },
