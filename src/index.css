@@ -3,6 +3,8 @@
 @layer components {
   .main {
     @apply min-h-screen bg-gradient-to-br from-[#0F0323] via-[#120A25] to-[#1E0F38] flex flex-col justify-center items-center px-4 sm:px-8 lg:px-[150px] text-white;
+    position: relative;
+    z-index: 10;
   }
   .btn {
     @apply text-gray-900 bg-gradient-to-r from-pink-200 via-pink-100 to-orange-100 
@@ -43,6 +45,16 @@
   #nextBtn {
     @apply right-[-30px];
   }
+
+  .particles-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+  }
 }
 
 @layer utilities {
@@ -50,8 +62,3 @@
     @apply flex items-center justify-center;
   }
 }
-/* @layer base {
-  body {
-    @apply min-h-screen bg-gradient-to-br from-[#0F0323] via-[#120A25] to-[#1E0F38] flex flex-col justify-center items-center px-4 sm:px-8 lg:px-[150px] text-white;
-  }
-} */
