@@ -1,14 +1,42 @@
+import { useState } from "react";
+import Typewriter from "typewriter-effect";
+
 function MeSection() {
+  const [secondLine, setSecondLine] = useState(false);
+
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-8 lg:gap-12 mt-8 sm:mt-[60px] mb-8 sm:mb-[50px] w-full flex-1">
       {/* <!-- Text --> */}
       <div className="w-full lg:w-1/2 flex flex-col justify-center lg:justify-start items-center lg:items-start text-center lg:text-left -order-2 lg:order-1 lg:mt-14">
         <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-          Hi, I'm Rayen
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString("Hi, I'm Rayen")
+                .callFunction(() => {
+                  setSecondLine(true); // trigger ICT Student after typing finishes
+                })
+                .start();
+            }}
+            options={{
+              loop: false,
+              delay: 100,
+            }}
+          />
         </div>
-        <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl">
-          ICT Student
-        </div>
+        {secondLine && (
+          <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+            <Typewriter
+              options={{
+                strings: ["ICT Student"],
+                autoStart: true,
+                loop: false,
+                delay: 100,
+                deleteSpeed: 999999999,
+              }}
+            />
+          </div>
+        )}
         <p className="mt-4 lg:mt-[20px] text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed">
           A 3rd year engineering student passioned by Cybersecurity, AI and
           everything in between, also I have a deep interest in design that's
