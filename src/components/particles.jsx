@@ -42,7 +42,7 @@ const ParticlesComponent = (props) => {
             duration: 15,
           },
           grab: {
-            distance: 200,
+            distance: 150,
           },
         },
       },
@@ -54,7 +54,7 @@ const ParticlesComponent = (props) => {
           color: "#FFFFFF",
           distance: 150,
           enable: true,
-          opacity: 0.2,
+          opacity: 0.1,
           width: 1,
         },
         move: {
@@ -64,7 +64,7 @@ const ParticlesComponent = (props) => {
             default: "bounce",
           },
           random: true,
-          speed: 1,
+          speed: 1.2,
           straight: false,
         },
         number: {
@@ -74,7 +74,7 @@ const ParticlesComponent = (props) => {
           value: 110,
         },
         opacity: {
-          value: 0.6,
+          value: 0.2,
         },
         shape: {
           type: "circle",
